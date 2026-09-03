@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caacupe+One&display=swap');
+body{
+    background-color: rgb(255, 255, 255);
+    background-color: #EBCDB7; /* Bisque */
+    line-height: 1.6;
+    font-family: "Caacupe One", sans-serif;
+}
+
+h1, h2, h3{
+    color: #3A2119; /* Espresso */
+    margin-bottom: 20px;
+}
+
+h1{font-size: 50px;
+    font-family: "Caacupe One", sans-serif;
+}
+
+h2{font-size: 30px;
+    font-family: "Caacupe One", sans-serif;
+}
+
+h3{font-size: 20px;
+    font-family: "Caacupe One", sans-serif;
+}
+
+.contenedor{
+    max-width: 720px;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+#encabezado{
+    background-color: #957662; /* Clay */
+   border-bottom : 4px solid #3A2119; /* Espresso */
+   font-size: 40px;
+}
+
+#encabezado .contenedor{
+    text-align: center;
+}
+
+.marca{
+    font-size: 22px;
+    font-family: "Caacupe One", sans-serif;
+    color: #3A2119; /* Espresso */
+    margin:0;
+    letter-spacing: 1px;
+}
+
+.seccion-clara{
+    background-color: rgba(235, 205, 183, 0.47); /* Bisque con opacidad original */
+    padding: 20px;
+}
+.seccion-oscura{
+    background-color: rgba(149, 118, 98, 0.676); /* Clay con opacidad original */
+    padding: 20px;
+}
+
+.seccion .contenedor{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.imagen-inicio{
+    width: 100%;
+    max-width: 480px;
+    border: 1px solid #3A2119; /* Espresso */
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.boton{
+    display: inline-block;
+    background-color: #957662; /* Clay */
+    color: #3A2119; /* Espresso */
+    padding: 12px 28px;
+    border-radius: 100px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.tabla-menu {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+ 
+.tabla-menu th,
+.tabla-menu td {
+  padding: 12px 16px;
+  border: 1px solid #37291f; /* Clay */
+}
+ 
+.tabla-menu thead th {
+  background-color: #3A2119; /* Espresso */
+  color: #d3e4f1; ;
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+}
+ 
+.lista-razones {
+  text-align: left;
+  max-width: 420px;
+  margin: 16px auto 0 auto;
+  padding-left: 20px;
+}
+ 
+ 
+.horario {
+  max-width: 320px;
+  margin: 32px auto 0 auto;
+  padding: 20px 24px;
+  background-color: #b3a096; ;
+  border: 1px solid #3A2119; /* Clay */
+  border-radius: 12px;
+  text-align: left;
+}
+ 
+.horario h3 {
+  border-bottom: 2px solid #957662; /* Clay */
+  padding-bottom: 8px;
+}
+ 
+.horario li { margin-bottom: 6px; font-size: 15px; }
+ 
+.volver {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  
+}
+
+.volver a{
+    color: #3A2119; /* Espresso */
+    text-decoration: none;
+}
+
+footer{
+    background-color: #957662; /* Clay */
+    color: #3A2119; /* Espresso */
+    text-align: center;
+}
+
+footer p{
+    margin: 4px 0;
+    font-size: 20px;
+}
+
+#inicio p span{
+    font-size: 20px;
+    color: #3A2119; /* Espresso */
+    font-family: "Caacupe One", sans-serif;
+}   
+
+nav > a{
+    color: #3A2119; /* Espresso */
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    font-family: "Caacupe One", sans-serif;
+}
+
+#menu h2 + table{
+    margin-top: 20px;
+}
+
+/*Selector de atrinutos*/
+td[colspan]{
+    text-align: center;
+    font-size: 20px;
+    background-color: #957662; /* Clay */
+}  
+
+a[href^=mailto]{
+    color: #5cb1f3; /* Glacier - Cambiado a tono claro para que resalte y no se pierda en el fondo oscuro */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Caacupe One", sans-serif;
+}
+
+/*pseudo-elementos*/
+#inicio p::first-letter{
+    font-size: 2cm;
+    color: #3A2119; /* Espresso */
+}
+
+
+#nosotros P::first-line{
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/*pseudo-clases*/
+#navegacion > a:hover{
+    color: #5cb1f3;; /* Chambray */
+    border-bottom: 2px solid #957662; /* Clay */
+    transition: 1s all;
+}
+
+.boton:hover{
+    background-color: #5cb1f3; /* Chambray */
+}
+
+.boton:active{
+    background-color: #3A2119; /* Espresso */
+}
+
+.tabla-menu tbody tr:nth-child(even){
+    border-bottom: 3px solid #957662; /* Clay */
+}
+
+/* Pares dfondo blanco e impares fondo marron */
+.tabla-menu tbody tr:nth-child(even){
+    background-color: #5cb1f3; ;
+}
