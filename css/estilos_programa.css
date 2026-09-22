@@ -1,0 +1,112 @@
+body {
+    /* Fondo crema pastel suave que combina con la paleta y hace resaltar los bloques */
+    background-color: #fbf8f3;
+    color: #2b2b2b;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header-serie {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../img/girls.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.main-title-serie {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 5.5em; 
+    letter-spacing: -3px; 
+    margin: 0;
+    line-height: 1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.tagline {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-top: 15px;
+    font-style: italic;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+#container-girls {
+    width: 85%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.block-section {
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.block-pink {
+    background-color: #f7b1cd;
+    color: #2b1720;
+}
+
+.block-blue {
+    background-color: #7bc1cc;
+    color: #112d32;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.text-content {
+    font-size: 1.05em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.text-highlight {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    border-left: 5px solid #ffffff;
+    border-radius: 4px;
+    font-style: italic;
+}
+
+.image-box {
+    width: 100%;
+    margin: 25px 0;
+    text-align: center;
+}
+
+#poster-girls {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    border: 6px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+#footer-serie {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-credit {
+    color: #777777;
+    font-size: 0.9em;
+    margin: 0;
+}
