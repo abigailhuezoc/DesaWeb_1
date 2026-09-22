@@ -1,0 +1,199 @@
+/* Variables de Diseño */
+:root {
+    --color-fondo: #f4f6f9;
+    --color-tarjeta: #ffffff;
+    --color-primario: #1e3a8a; /* Azul elegante */
+    --color-acento: #0284c7;   /* Azul celaje */
+    --color-texto: #334155;
+    --color-texto-suave: #64748b;
+    --color-borde: #e2e8f0;
+    --fuente-principal: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+}
+
+/* Header & Nav */
+.header-bio {
+    background: linear-gradient(135deg, var(--color-primario), var(--color-acento));
+    color: white;
+    padding: 40px 20px 0;
+    text-align: center;
+}
+
+.perfil-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Estilo para las imágenes */
+.foto-perfil {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.titular h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.subtitulo {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Navegación con pseudo-clases */
+.nav-bio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 12px;
+}
+
+.nav-bio > a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.nav-bio a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Layout Principal */
+.contenedor-principal {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.seccion-card {
+    background: var(--color-tarjeta);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    border: 1px solid var(--color-borde);
+}
+
+h2 {
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-borde);
+    padding-bottom: 8px;
+}
+
+.destacado {
+    font-size: 1.05rem;
+    color: var(--color-primario);
+    margin-bottom: 15px;
+}
+
+.seccion-card p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* Pseudo-elemento capitular */
+#sobre-mi p.destacado::first-letter {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-acento);
+}
+
+/* Timeline / Lista de Educación */
+.item-educacion {
+    border-left: 3px solid var(--color-acento);
+    padding-left: 15px;
+    margin-bottom: 18px;
+}
+
+.item-educacion h3 {
+    font-size: 1.1rem;
+    color: var(--color-texto);
+}
+
+/* Listas */
+.lista-intereses {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.lista-intereses li {
+    margin-bottom: 8px;
+}
+
+/* Selector nth-child para alternar filas de lista */
+.lista-intereses li:nth-child(even) {
+    color: var(--color-primario);
+    font-weight: 600;
+}
+
+.galeria-grid img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Enlaces externos */
+.lista-enlaces {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.btn-link {
+    display: block;
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid var(--color-borde);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.btn-link:hover {
+    background-color: var(--color-primario);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.footer-bio {
+    text-align: center;
+    padding: 20px;
+    color: var(--color-texto-suave);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--color-borde);
+}

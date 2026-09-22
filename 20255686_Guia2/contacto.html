@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros Futuro - Contacto</title>
+    <link rel="stylesheet" href="css/reto_style.css">
+</head>
+<body>
+
+    <header class="header-futuro">
+        <div class="logo-futuro">SEGUROS FUTURO</div>
+        <nav class="nav-futuro">
+            <a href="inicio.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="contacto.html" class="active">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container-futuro">
+        <h1>Formulario de Contacto</h1>
+        <p style="margin-bottom: 20px; color: #718096;">Escríbenos para recibir asesoría personalizada sobre tus seguros.</p>
+
+        <form class="card-principal" onsubmit="event.preventDefault(); alert('Mensaje enviado correctamente');" style="max-width: 550px; margin: 0 auto;">
+            <div style="margin-bottom: 12px;">
+                <label style="display:block; margin-bottom: 5px; font-weight:bold; color: var(--verde-menta);">Nombre Completo</label>
+                <input type="text" required placeholder="Tu nombre" style="width:100%; padding:10px; border:1px solid #cbd5e0; border-radius:5px;">
+            </div>
+            <div style="margin-bottom: 12px;">
+                <label style="display:block; margin-bottom: 5px; font-weight:bold; color: var(--verde-menta);">Correo Electrónico</label>
+                <input type="email" required placeholder="correo@ejemplo.com" style="width:100%; padding:10px; border:1px solid #cbd5e0; border-radius:5px;">
+            </div>
+            <div style="margin-bottom: 18px;">
+                <label style="display:block; margin-bottom: 5px; font-weight:bold; color: var(--verde-menta);">Mensaje</label>
+                <textarea rows="4" required placeholder="¿En qué te podemos ayudar?" style="width:100%; padding:10px; border:1px solid #cbd5e0; border-radius:5px; font-family:inherit;"></textarea>
+            </div>
+            <button type="submit" class="btn-cotizar" style="width: 100%;">Enviar Mensaje</button>
+        </form>
+
+        <a href="inicio.html" class="link-volver">&larr; Volver al Inicio</a>
+    </div>
+
+</body>
+</html>
